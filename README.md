@@ -5,25 +5,25 @@ Criar database mysql com o nome "controledespesas"
 
 ## Configurar api
 
-Rodar comandos:
-    - composer install
-    - php artisan migrate
-    - php artisan key:generate
+Rodar comandos:<br>
+    - composer install<br>
+    - php artisan migrate<br>
+    - php artisan key:generate<br>
 
 ## Crie o arquivo .env
-use como exemplo o arquivo .env.example
+use como exemplo o arquivo .env.example<br><br>
 
-Atualize as variáveis:
-    - DB_HOST
-    - DB_USERNAME
-    - DB_PASSWORD
-    - MAIL_HOST
-    - MAIL_PORT
-    - MAIL_USERNAME
-    - MAIL_PASSWORD
-    - MAIL_ENCRYPTION
+Atualize as variáveis:<br>
+    - DB_HOST<br>
+    - DB_USERNAME<br>
+    - DB_PASSWORD<br>
+    - MAIL_HOST<br>
+    - MAIL_PORT<br>
+    - MAIL_USERNAME<br>
+    - MAIL_PASSWORD<br>
+    - MAIL_ENCRYPTION<br>
 
 
 ## Inicie a api
-Rode o comando php artisan serve
+Rode o comando: php artisan serve
 
