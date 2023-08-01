@@ -26,7 +26,7 @@ Atualize as variáveis:<br>
 
 
 ## Inicie a api
-Rode em terminais distintos:
+Rode em terminais distintos:<br>
     - php artisan serve<br>
     - php artisan queue:work<br>
  
