@@ -21,7 +21,6 @@ Atualize as variáveis:<br>
 Rodar comandos:<br>
     - composer install<br>
     - php artisan migrate<br>
-    - php artisan key:generate<br>
     - php artisan db:seed<br>
 
 
