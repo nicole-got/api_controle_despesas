@@ -1,6 +1,5 @@
 
 ## Banco de dados
-
 Criar database mysql com o nome "controledespesas"
 
 ## Crie o arquivo .env
@@ -17,20 +16,19 @@ Atualize as variáveis:<br>
     - MAIL_ENCRYPTION<br>
 
 ## Configurar api
-
-Rodar comandos:<br>
-    - composer install<br>
-    - php artisan migrate<br>
-    - php artisan key:generate<br>
-    - php artisan db:seed<br>
+    composer install
+    php artisan migrate
+    php artisan key:generate
+    php artisan db:seed
 
 
 ## Inicie a api
-Rode em terminais distintos:<br>
-    - php artisan serve<br>
-    - php artisan queue:work<br>
+    php artisan serve
+
+## Escute a fila para envio do email
+    php artisan queue:work
     
 ## Teste unitário
-    - php artisan test
+    php artisan test
  
 
