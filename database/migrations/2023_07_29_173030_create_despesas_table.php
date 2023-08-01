@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('despesas', function (Blueprint $table) {
-            $table->id();
-            $table->integer('idUsuario');
+            $table->bigInteger('id')->primary();
+            $table->bigInteger('idUsuario');
             $table->string('descricao', 191);
             $table->date('data');
             $table->double('valor', 9, 2);
