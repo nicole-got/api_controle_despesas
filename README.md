@@ -17,11 +17,10 @@ Atualize as variáveis:<br>
     - MAIL_ENCRYPTION<br>
 
 ## Configurar api
-
-    - composer install<br>
-    - php artisan migrate<br>
-    - php artisan key:generate<br>
-    - php artisan db:seed<br>
+    composer install
+    php artisan migrate
+    php artisan key:generate
+    php artisan db:seed
 
 
 ## Inicie a api
