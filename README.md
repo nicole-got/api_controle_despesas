@@ -18,7 +18,6 @@ Atualize as variáveis:<br>
 
 ## Configurar api
 
-Rodar comandos:<br>
     - composer install<br>
     - php artisan migrate<br>
     - php artisan key:generate<br>
