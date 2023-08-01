@@ -4,7 +4,7 @@
 Criar database mysql com o nome "controledespesas"
 
 ## Crie o arquivo .env
-use como exemplo o arquivo .env.example<br><br>
+Use como exemplo o arquivo .env.example<br>
 
 Atualize as variáveis:<br>
     - DB_HOST<br>
