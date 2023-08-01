@@ -1,6 +1,5 @@
 
 ## Banco de dados
-
 Criar database mysql com o nome "controledespesas"
 
 ## Crie o arquivo .env
@@ -24,11 +23,12 @@ Atualize as variáveis:<br>
 
 
 ## Inicie a api
-Rode em terminais distintos:<br>
-    - php artisan serve<br>
-    - php artisan queue:work<br>
+    php artisan serve
+
+## Escute a fila para envio do email
+    php artisan queue:work
     
 ## Teste unitário
-    - php artisan test
+    php artisan test
  
 
