@@ -1,18 +1,9 @@
 
 ## Banco de dados
-
 Criar database mysql com o nome "controledespesas"
 
-## Configurar api
-
-Rodar comandos:<br>
-    - composer install<br>
-    - php artisan migrate<br>
-    - php artisan key:generate<br>
-    - php artisan db:seed<br>
-
 ## Crie o arquivo .env
-use como exemplo o arquivo .env.example<br><br>
+Use como exemplo o arquivo .env.example<br>
 
 Atualize as variáveis:<br>
     - DB_HOST<br>
@@ -24,11 +15,23 @@ Atualize as variáveis:<br>
     - MAIL_PASSWORD<br>
     - MAIL_ENCRYPTION<br>
 
+## Configurar api
+    composer install
+    php artisan migrate
+    php artisan key:generate
+    php artisan db:seed
+
 
 ## Inicie a api
 Rode em terminais distintos:<br>
     - php artisan serve<br>
     - php artisan queue:work<br>
+
+## Escute a fila para envio do email
+    php artisan queue:work
+    
+## Teste unitário
+    php artisan test
 
 
 ## Documentação
@@ -99,5 +102,6 @@ PUT /api/despesa/{id}
 ```bash
 DELETE /api/despesa/{id}
 ```
+    
  
 
