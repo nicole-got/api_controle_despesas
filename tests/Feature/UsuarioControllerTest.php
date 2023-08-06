@@ -23,4 +23,36 @@ class UsuarioControllerTest extends TestCase
     {
         Auth::login(\App\Models\Usuario::where('email', 'api@controledespesa.com')->first());
     }
+
+    public function test_delete()
+    {
+        $usuario = Usuario::factory()->create();
+
+        $this->login();
+        $response = $this->delete('/api/usuario/'.$usuario->id);
+
+        $response->assertStatus(200);
+    }
+
+    public function test_cadastro()
+    {
+        $usuario = Usuario::factory()->make();
+        
+        $response = $this->post('/api/cadastrar/usuario',[
+            'nome' => $usuario->nome,
+            'email' => $usuario->email,
+            'senha' => '123',
+        ]);
+
+        $response->assertStatus(201);
+
+        $this->assertDatabaseHas('usuarios', [
+            'nome' => $usuario->nome,
+            'email' => $usuario->email,
+        ]);
+
+        $this->login();
+        $response = $this->delete('/api/usuario/'.$response->json()['data']['id']);
+    }
+
 }
